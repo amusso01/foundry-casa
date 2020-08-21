@@ -25,10 +25,71 @@ $content-well-max-width: "none"; // Set the max-width of the content well => see
 /*==================================================================================
   FONT
 ==================================================================================*/
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600,800&display=swap");
+@font-face {
+  font-family: "span";
+  src: url("https://use.typekit.net/af/d98007/00000000000000003b9b41cb/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/d98007/00000000000000003b9b41cb/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/d98007/00000000000000003b9b41cb/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "span";
+  src: url("https://use.typekit.net/af/35718a/00000000000000003b9b41ce/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/35718a/00000000000000003b9b41ce/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/35718a/00000000000000003b9b41ce/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "span";
+  src: url("https://use.typekit.net/af/836981/00000000000000003b9b41cf/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/836981/00000000000000003b9b41cf/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/836981/00000000000000003b9b41cf/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 600;
+}
 
-$text__fontname: "Raleway", sans-serif; // Normal 400, Medium 500, Bold 700
-$header__fontname: "Raleway", sans-serif; // Normal 400, Medium 500, Bold 700
+@font-face {
+  font-family: "span";
+  src: url("https://use.typekit.net/af/ed34c4/00000000000000003b9b41d0/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/ed34c4/00000000000000003b9b41d0/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/ed34c4/00000000000000003b9b41d0/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: italic;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "span";
+  src: url("https://use.typekit.net/af/3a63d0/00000000000000003b9b41d1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/3a63d0/00000000000000003b9b41d1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/3a63d0/00000000000000003b9b41d1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+}
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap");
+
+$text__fontname: "Work Sans", sans-serif; // Normal 400, Medium 500, Bold 700
+$header__fontname: "span", serif; // Normal 400, Medium 500, Bold 700
 
 /*==================================================================================
   COLORS
@@ -36,22 +97,22 @@ $header__fontname: "Raleway", sans-serif; // Normal 400, Medium 500, Bold 700
 
 /* from customiser root -> see function-customiser.php
 /––––––––––––––––––––––––*/
-$color__main: var(--main_color);
-$color__text: var(--text_color);
-$color__link: var(--link_color);
-$color__link-hover: var(--link_color_hover);
-$color__footerBg: var(--footer-color);
+$color__main: #c9b597;
+$color__text: #141416;
+$color__link: #141416;
+$color__link-hover: #d6ab66;
+$color__footerBg: #ffffff;
 $color__bright: #ffffff;
-$color__dark: #353434;
+$color__dark: #b7b7b7;
 
 /*==================================================================================
   BUTTONS
 ==================================================================================*/
 
 $button__color: $color__main;
-$button__width: 150px;
-$button__height: 45px;
-$button__radius: 30px;
+$button__width: 180px;
+$button__height: 48px;
+$button__radius: 0px;
 
 /*==================================================================================
   TYPOGRAPHY

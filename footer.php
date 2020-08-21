@@ -28,8 +28,6 @@
 			</div>
 
 			<div class="col-md-4 site-footer__item site-footer__center ">
-
-				<?php get_template_part( 'components/navigation/footer-nav' ) ?>
 		
 			<?php 	if ( is_active_sidebar( 'footer-center' ) ) : ?>
 				
@@ -39,7 +37,7 @@
 			
 			<?php endif; ?>
 
-				<?php get_template_part( 'components/footer/copyright' ) ?>
+			<?php get_template_part( 'components/footer/copyright' ) ?>
 
 			</div>
 			

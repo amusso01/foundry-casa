@@ -14,6 +14,6 @@
 /* Copyright
 /––––––––––––––––––––––––*/
 function copyright() {
-    return '&copy; ' . date('Y') . ' <span class="copyright-site-name">' . get_bloginfo('name') . '</span>.';
+    return ' <span class="copyright-site-name">' . get_bloginfo('name') . '</span> &copy; ' . date('Y') .' all rights reserved' ;
   }
   add_shortcode('copyright', 'copyright');

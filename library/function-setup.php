@@ -30,7 +30,7 @@ setlocale(LC_ALL, 'en_US.UTF-8');
 ==================================================================================*/
 // Gutenberg comes with default styles for all blocks
 // by default these styles are disabled. Change this to `true` to enqueue them
-$load_default_block_styles = false;
+$load_default_block_styles = true;
 
 
 
@@ -51,7 +51,10 @@ $GTM_id = '';
 function wpseed_register_theme_menus() {
   register_nav_menus([
     'mainmenu' => __('Main menu'),
-    'footermenu' => __('Footer menu')
+    'servicemenu' => __('Services Menu'),
+    'footermenu' => __('Footer menu'),
+    'socialmenu' => __('Social menu'),
+    'legalmenu' => __('Legal menu')
   ]);
 }
 add_action( 'init', 'wpseed_register_theme_menus');
@@ -61,7 +64,7 @@ add_action( 'init', 'wpseed_register_theme_menus');
   5.0 SETUP LOGIN PAGE 
 ==================================================================================*/
 
-$gFontUrl = "https://fonts.googleapis.com/css?family=Girassol&display=swap";
-$fontFamily = "'Girassol', cursive";
-$customLogo = get_stylesheet_directory_uri()."/dist/images/foundry-logo.svg";
-$mainColor = "#ff0000";
+$gFontUrl = "https://fonts.googleapis.com/css2?family=Work+Sans&display=swap";
+$fontFamily = "'Work Sans', sans-serif";
+$customLogo = get_stylesheet_directory_uri()."/dist/images/logo-gold.svg";
+$mainColor = "#C9B597";

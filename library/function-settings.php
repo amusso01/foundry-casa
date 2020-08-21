@@ -257,7 +257,10 @@ function we_login_logo() {
         #login h1 a, .login h1 a {
             background-image: url( <?php echo $customLogo ?>);
 			background-repeat: no-repeat;
-			background-size: 70px;
+			background-size: 170px;
+			background-position:center;
+			width:180px;
+			height:100px;
 			<?php if($fontFamily): ?>
 			font-family: <?php echo $fontFamily ?>!important;
 			<?php endif; ?>

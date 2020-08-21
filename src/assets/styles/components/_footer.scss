@@ -1,3 +1,40 @@
 footer.site-footer {
-	background-color: $color__footerBg;
+  background-color: $color__footerBg;
+  .site-footer__copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > p {
+      text-transform: uppercase;
+      font-family: $text__fontname;
+      color: $color__dark;
+      font-size: 14px;
+    }
+  }
+  #menu-social {
+    display: flex;
+    align-items: center;
+    > li {
+      margin-left: 10px;
+
+      &:first-of-type {
+        margin-left: 0px;
+      }
+    }
+  }
+  #menu-legal-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    > li {
+      font-family: $text__fontname;
+      a {
+        color: $color__dark;
+        font-size: 14px;
+        &:hover {
+          color: $color__link-hover;
+        }
+      }
+    }
+  }
 }
