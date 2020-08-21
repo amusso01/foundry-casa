@@ -10,3 +10,8 @@
 
 get_header();
 ?>
+
+
+
+<?php get_template_part( 'components/footer/banner-footer' ); ?>
+<?php get_footer(); ?>
